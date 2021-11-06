@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Oto_GaleriModelStoreContainer" CdmEntityContainer="Oto_GaleriEntities">
+    <EntitySetMapping Name="Alım">
+      <EntityTypeMapping TypeName="Oto_GaleriModel.Alım">
+        <MappingFragment StoreEntitySet="Alım">
+          <ScalarProperty Name="alimno" ColumnName="alimno" />
+          <ScalarProperty Name="mno" ColumnName="mno" />
+          <ScalarProperty Name="aracno" ColumnName="aracno" />
+          <ScalarProperty Name="alim_tarih" ColumnName="alim_tarih" />
+          <ScalarProperty Name="afiyat" ColumnName="afiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Arac">
+      <EntityTypeMapping TypeName="Oto_GaleriModel.Arac">
+        <MappingFragment StoreEntitySet="Arac">
+          <ScalarProperty Name="aracno" ColumnName="aracno" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="marka" ColumnName="marka" />
+          <ScalarProperty Name="plaka" ColumnName="plaka" />
+          <ScalarProperty Name="fiyat" ColumnName="fiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Müsteri">
+      <EntityTypeMapping TypeName="Oto_GaleriModel.Müsteri">
+        <MappingFragment StoreEntitySet="Müsteri">
+          <ScalarProperty Name="mno" ColumnName="mno" />
+          <ScalarProperty Name="madi" ColumnName="madi" />
+          <ScalarProperty Name="msoyadi" ColumnName="msoyadi" />
+          <ScalarProperty Name="madres" ColumnName="madres" />
+          <ScalarProperty Name="mtelefon" ColumnName="mtelefon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Satıs">
+      <EntityTypeMapping TypeName="Oto_GaleriModel.Satıs">
+        <MappingFragment StoreEntitySet="Satıs">
+          <ScalarProperty Name="satno" ColumnName="satno" />
+          <ScalarProperty Name="mno" ColumnName="mno" />
+          <ScalarProperty Name="aracno" ColumnName="aracno" />
+          <ScalarProperty Name="sat_tarih" ColumnName="sat_tarih" />
+          <ScalarProperty Name="sfiyat" ColumnName="sfiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Oto_GaleriModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
